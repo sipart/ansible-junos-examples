@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
     re_name  = ( "vsrx" + id.to_s ).to_sym
 
     config.vm.define re_name do |vsrx|
-      vsrx.vm.box = "juniper/ffp-12.1X47-D20.7-packetmode"
+      vsrx.vm.box = "juniper/ffp-12.1X47-D15.4-packetmode"
       vsrx.vm.network "private_network",
          ip: "192.168.1.#{id}",
          virtualbox__intnet: "neta",
